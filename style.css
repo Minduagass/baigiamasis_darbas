@@ -1,3 +1,20 @@
+/*------------------------------------- global settings --------------------------------*/
+@font-face {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 100 900; /* variable range */
+  src: url("./fonts/InterTight-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+}
+
 * {
   margin: 0;
   padding: 0;
