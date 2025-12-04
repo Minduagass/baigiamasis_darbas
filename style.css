@@ -7,12 +7,9 @@
   font-display: swap;
 }
 
-body {
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 400;
-}
-
 :root {
+  --header-text-color: black;
+  --main-background-color: #ffe8ba;
 }
 
 * {
@@ -20,3 +17,59 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+}
+
+.section-wrapper {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*------------------------------------------ header -----------------------------------------*/
+.logo {
+  font-size: 26px;
+}
+
+.header-wrapper a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.header-wrapper nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-btn {
+  display: flex;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.1rem;
+  font-weight: 600;
+}
+
+.cart-btn img {
+  height: 25px;
+  width: 100%;
+}
+
+/*------------------------------------------ main section -----------------------------------*/
+main {
+  background-color: var(--main-background-color);
+}
+/*------------------------------------------ responsive -------------------------------------*/
