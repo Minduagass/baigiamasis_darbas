@@ -8,8 +8,14 @@
 }
 
 :root {
-  --header-text-color: black;
-  --main-background-color: #ffe8ba;
+  /*---------------- header settings ----------------*/
+
+  --header-section-text-color: black;
+  --header-section-logo-size: 2rem;
+
+  /*---------------- main section settings ----------*/
+
+  --main-section-background-color: #ffe8ba;
 }
 
 * {
@@ -31,45 +37,48 @@ body {
 
 /*------------------------------------------ header -----------------------------------------*/
 .logo {
-  font-size: 26px;
+  font-size: var(--header-section-logo-size);
 }
 
 .header-wrapper a {
   text-decoration: none;
-  color: var(--header-text-color);
+  color: var(--header-section-text-color);
 }
 
 .header-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
   padding: 1rem 2rem;
 }
 
 .header-wrapper nav ul {
-  list-style: none;
   display: flex;
+  justify-content: center;
+  list-style: none;
   gap: 2rem;
 }
 
 .cart-btn {
   display: flex;
+  justify-content: end;
+  align-items: center;
   border: none;
   background: transparent;
   cursor: pointer;
-  align-items: center;
   gap: 0.1rem;
   font-weight: 600;
 }
 
 .cart-btn img {
+  align-items: center;
   height: 25px;
   width: 100%;
 }
 
 /*------------------------------------------ main section -----------------------------------*/
 main {
-  background-color: var(--main-background-color);
+  background-color: var(--main-section-background-color);
 }
 /*------------------------------------------ responsive -------------------------------------*/
