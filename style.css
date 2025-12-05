@@ -11,7 +11,7 @@
   /*---------------- header settings ----------------*/
 
   --header-section-text-color: black;
-  --header-section-logo-size: 2rem;
+  --header-section-logo-size: 1.5rem;
 
   /*---------------- main section settings ----------*/
 
@@ -36,6 +36,18 @@ body {
 }
 
 /*------------------------------------------ header -----------------------------------------*/
+.burger-btn {
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-btn img {
+  height: 25px;
+  width: 25px;
+  display: block;
+}
+
 .logo {
   font-size: var(--header-section-logo-size);
 }
@@ -72,7 +84,7 @@ body {
 }
 
 .cart-btn img {
-  align-items: center;
+  display: block;
   height: 25px;
   width: 100%;
 }
@@ -82,3 +94,16 @@ main {
   background-color: var(--main-section-background-color);
 }
 /*------------------------------------------ responsive -------------------------------------*/
+@media (max-width: 768px) {
+  .header-wrapper nav {
+    display: none;
+  }
+
+  .burger-btn {
+    display: inline-block;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+}
